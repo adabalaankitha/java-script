@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Guess the Number Game</title>
+</head>
+<body>
+  <h1>Guess the Number Game</h1>
+  <p>Try to guess the randomly generated number between 1 and 10.</p>
+  
+  <input type="number" id="guessInput" placeholder="Enter your guess">
+  <button id="guessButton">Guess</button>
+  
+  <p id="message"></p>
+  
+  <script>
+    // Generate a random number between 1 and 10
+    const targetNumber = Math.floor(Math.random() * 10) + 1;
+    
+    const guessInput = document.getElementById('guessInput');
+    const guessButton = document.getElementById('guessButton');
+    const message = document.getElementById('message');
+    
+    let attempts = 0;
+    
+    guessButton.addEventListener('click', function() {
+      const userGuess = parseInt(guessInput.value);
+      attempts++;
+      
+      if (isNaN(userGuess)) {
+        message.textContent = 'Please enter a valid number.';
+      } else if (userGuess < 1 || userGuess > 10) {
+        message.textContent = 'Please enter a number between 1 and 100.';
+      } else {
+        if (userGuess === targetNumber) {
+          message.textContent = `Congratulations! You guessed the number ${targetNumber} in ${attempts} attempts.`;
+          guessInput.disabled = true;
+          guessButton.disabled = true;
+        } else if (userGuess < targetNumber) {
+          message.textContent = 'Try a higher number.';
+        } else {
+          message.textContent = 'Try a lower number.';
+        }
+      }
+    });
+  </script>
+</body>
+</html>
+
+ // Created by Santhosh Raj Adabala...!!

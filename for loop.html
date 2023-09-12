@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+<script>
+	
+	//object
+	var trainees=[{
+		'name':'hari',
+		'roll_no':'54655',
+		'college':'aditya',
+		'branch':'ece',
+	},
+	{
+		'name':'nari',
+		'roll_no':'76745',
+		'college':'aditya',
+		'branch':'cse',
+	}]
+	//console.log(trainees)
+	//console.log(trainees.length)
+	for (var i = 0; i < trainees.length; i++) {
+  document.write(trainees[i].name,trainees[i].roll_no,trainees[i].college,trainees[i].branch)
+  document.write("<br>") }
+	// /console.log(trainees)
+	//console.log(trainees[0].roll_no);
+	//console.log(trainees[0].college);
+	//console.log(trainees[0].name);
+	//console.log(trainees[0].branch);
+    
+    //console.log(trainees[1].roll_no);
+	//console.log(trainees[1].college);
+	//console.log(trainees[1].name);
+	//console.log(trainees[1].branch)//;
+  for (var i =0;i<trainees.length ; i++) {
+    for (var key in trainees[i]) {
+    	document.write("<br>");
+    }
+    document.write("<br>");
+  }
+    
+
+</script>
+</body>
+</html>

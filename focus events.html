@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+<ul style="list-style-type: name;">
+	<li>focus</li>
+	<li>blur</li>
+	<li>focus in</li>
+	<li>focus out</li>
+	
+</ul>
+<hr>
+<form>
+	<label>focus</label>
+	<input type="text" name="" onfocus="sample(this,'red')">
+	<label>blur</label>
+	<input type="text" name="" onblur ="sample(this,'blue')">
+	
+
+</form>
+<script type="text/javascript">
+	function sample(current_element,color_value) {
+		current_element.style.backround = color_value;
+		// body...
+	}
+</script>
+</body>
+</html>

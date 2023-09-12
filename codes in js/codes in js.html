@@ -1,0 +1,147 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<script>
+		var name='indhu';
+		name+='<br>ankitha<br>';
+		name+='gayathri';
+		document.write(name)
+	</script>
+</body>
+</html> -->
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<script>
+		var obj=[{
+			'name':'Indhu',
+			'roll_number':12345,
+			'college':'AEC',
+			'branch':'ECE'
+		},
+		{
+		  'name':'siri',
+			'roll_number':12398,
+			'college':'AEC',
+			'branch':'CSE',
+		}]
+		console.log(obj[0].name);
+		console.log(obj[0].roll_number);
+		console.log(obj[0].college);
+		console.log(obj[0].branch);
+		console.log(obj[1].name);
+		console.log(obj[1].roll_number);
+		console.log(obj[1].college);
+		console.log(obj[1].branch);
+		// document.write(obj.name);
+		// document.write(obj.roll_number);
+		// document.write(obj.college);
+		// document.write(obj.branch);
+	</script>
+
+</body>
+</html> -->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	 <style>
+        table{
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+        th, td{
+            padding: 10px 20px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body id="body">
+    <script type="text/javascript">
+    	
+    	let table = document.createElement('table');
+        let thead = document.createElement('thead');
+        let tbody = document.createElement('tbody');
+        table.appendChild(thead);
+        table.appendChild(tbody);
+        document.getElementById('body').appendChild(table);
+
+        let row_1 = document.createElement('tr');
+let heading_1 = document.createElement('th');
+heading_1.innerHTML = "course name";
+let heading_2 = document.createElement('th');
+heading_2.innerHTML = "corse number";
+let heading_3 = document.createElement('th');
+heading_3.innerHTML = "course fees";
+let heading_4 = document.createElement('th');
+heading_4.innerHTML = "place";
+
+row_1.appendChild(heading_1);
+row_1.appendChild(heading_2);
+row_1.appendChild(heading_3);
+row_1.appendChild(heading_4);
+thead.appendChild(row_1);
+
+let row_2 = document.createElement('tr');
+let row_2_data_1 = document.createElement('td');
+row_2_data_1.innerHTML = "HTML";
+let row_2_data_2 = document.createElement('td');
+row_2_data_2.innerHTML = "1";
+let row_2_data_3 = document.createElement('td');
+row_2_data_3.innerHTML = "6000";
+let row_2_data_4 = document.createElement('td');
+row_2_data_4.innerHTML = "thub";
+
+row_2.appendChild(row_2_data_1);
+row_2.appendChild(row_2_data_2);
+row_2.appendChild(row_2_data_3);
+row_2.appendChild(row_2_data_4);
+tbody.appendChild(row_2);
+
+let row_3 = document.createElement('tr');
+let row_3_data_1 = document.createElement('td');
+row_3_data_1.innerHTML = "CSS";
+let row_3_data_2 = document.createElement('td');
+row_3_data_2.innerHTML = "2";
+let row_3_data_3 = document.createElement('td');
+row_3_data_3.innerHTML = "6000";
+let row_3_data_4 = document.createElement('td');
+row_3_data_4.innerHTML = "thub";
+
+row_3.appendChild(row_3_data_1);
+row_3.appendChild(row_3_data_2);
+row_3.appendChild(row_3_data_3);
+row_3.appendChild(row_3_data_4);
+tbody.appendChild(row_3);
+
+let row_4 = document.createElement('tr');
+let row_4_data_1 = document.createElement('td');
+row_4_data_1.innerHTML = "javascript";
+let row_4_data_2 = document.createElement('td');
+row_4_data_2.innerHTML = "3";
+let row_4_data_3 = document.createElement('td');
+row_4_data_3.innerHTML = "6000";
+let row_4_data_4 = document.createElement('td');
+row_4_data_4.innerHTML = "thub";
+
+row_4.appendChild(row_4_data_1);
+row_4.appendChild(row_4_data_2);
+row_4.appendChild(row_4_data_3);
+row_4.appendChild(row_4_data_4);
+tbody.appendChild(row_4);
+       
+    </script>
+</body>
+</html>

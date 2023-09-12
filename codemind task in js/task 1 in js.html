@@ -1,0 +1,124 @@
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Array methods</title>
+</head>
+<center>
+<body>
+  <h3>ARRAY METHODS</h3>
+
+<script type="text/javascript">
+  let a1 = [{
+    'name':'ankitha',
+    'rollno':32698746,
+  },
+  {
+    'name':'santhosh',
+    'rollno': 555555,
+  }];
+     document.write('map methed:')
+      a1.map(test)
+    function test(ind) {  
+    document.write( "<br>"+ind.name+" "+ind.rollno)
+  }
+
+document.write("<br>"+'push method');
+  const fruits1 = ["apple", "grapes", "greenapple",];
+fruits1.push("mango", "orange");  
+document.write('<br>')
+document.write(fruits1);
+document.write('<br>')
+document.write('pop method')
+document.write('<br>')
+const fruits2 = ["apple", "greenapple", "orange", "mango", "grape"];
+const last = fruits2.pop(); 
+document.write(fruits2); 
+document.write('<br>')
+document.write(last); 
+document.write("<br>"+'unshit method'+"<br>")
+const fruits3 = ["apple", "grapes", "greenapple"];
+fruits3.unshift("mango", "orange"); 
+document.write(fruits3); 
+document.write("<br>"+'shit method'+"<br>")
+const fruits4 = ["mango", "grapes", "apple", "greenapple", "orange"];
+const first = fruits4.shift(); 
+document.write(fruits4); 
+document.write(first);
+document.write("<br>"+'splice method'+"<br>")
+const fruits5 = ["apple", "grapes", "greenapple"];
+fruits5.splice(1, 1, "mango"); 
+document.write(fruits5);
+document.write("<br>"+'slice method'+"<br>")
+const fruits6 = ["apple", "grapes", "greenapple"];
+const sliced = fruits6.slice(1, 3); 
+document.write(fruits6); 
+document.write(sliced);
+document.write("<br>"+'sort method'+"<br>") 
+const numbers = [10, 5, 3, 8, 2];
+numbers.sort(); 
+document.write(numbers);
+document.write("<br>"+'indexof method'+"<br>")
+const fruits7 = ["apple", "grapes", "greenapple"];
+document.write(fruits7.indexOf("grapes")); 
+document.write(fruits7.indexOf("mango")); 
+document.write(fruits7.indexOf("orange", 2));
+ document.write("<br>"+'filter method'+"<br>")
+const numbers2 = [1, 2, 3, 4, 5, 6];
+const evenNumbers = numbers2.filter(number => number % 2 === 0);
+document.write(evenNumbers);
+document.write("<br>"+'fill method'+"<br>")
+const numbers3 = [1, 2, 3, 4, 5];
+const filledNumbers = numbers3.fill(4);
+document.write(filledNumbers);
+document.write("<br>"+'join method'+"<br>")
+const words = ["Hello", "world"];
+const sentence = words.join(" ");
+document.write(sentence);
+document.write("<br>"+'reduce method'+"<br>")
+const numbers4 = [1, 3, 4];
+const sum = numbers4.reduce((accumulator, currentValue) => accumulator + currentValue);
+document.write(sum);
+document.write("<br>"+'find method'+"<br>")
+let numbers5 = [1, 3, 4, 9, 8];
+let found = numbers5.find(element => element > 4);
+document.write(found); 
+document.write("<br>"+'findindexof method'+"<br>")
+let arr = [5, 23, 18, 24, 33];
+let result = arr.findIndex(element => element > 20);
+document.write(result);
+document.write("<br>"+'some method'+"<br>")
+let numbers6 = [1, 3, 2, 5, 4];
+let r = numbers6.some(element => element % 2 === 0);
+document.write(r);
+document.write("<br>"+'reverse method'+"<br>")
+let numbers7 = [1, 2, 3, 4, 5];
+let reversedNumbers = numbers7.reverse();
+document.write(reversedNumbers);
+document.write("<br>"+'foreach method'+"<br>")
+let colors = ["pink", "brown", "gray"];
+colors.forEach(function(element, index) {
+  document.write(element + " is at index " + index);
+});
+document.write("<br>"+'concat method'+"<br>")
+let firstName = "anki";
+let lastName = "tha";
+let fullName = firstName.concat(" ", lastName);
+document.write(fullName);
+//document.write("<br>"+'every method'+"<br>")
+
+</script>
+</body></center>
+</html>
+
+

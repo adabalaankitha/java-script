@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<h3>string methods</h3>
+	<table border="">
+		<tr>
+			<td>d</td>
+			<td>r</td>
+			<td>i</td>
+			<td>v</td>
+			<td>e</td>
+			<td></td>
+			<td>r</td>
+			<td>e</td>
+			<td>a</td>
+			<td>d</td>
+			<td>y</td>
+		</tr>
+		<tr>
+			<td>0</td>
+			<td>1</td>
+			<td>2</td>
+			<td>3</td>
+			<td>4</td>
+			<td>5</td>
+			<td>6</td>
+			<td>7</td>
+			<td>8</td>
+			<td>9</td>
+			<td>10</td>
+		</tr>
+
+	</table>
+	<script type="text/javascript">
+		function getstr(str) {
+			document.write("<br>"+str+"</b><br>")
+			// body...
+		}
+		let name= 'drive ready';
+		getstr("original string ="+name)
+		getstr("string length="+ name.length)
+		getstr(name.charAt(2))
+		//document.write("<br>"+s="<br>")
+		getstr(name.indexOf('a'))
+		getstr(name.indexOf('ready'))
+		getstr(name.lastIndexOf('r'))
+		let name1 = 'drive ready';
+		getstr("to lower case ="+name1.toLowerCase())
+		getstr("to upper case ="+name1.toUpperCase())
+		let name2 ='batch';
+		let name3 ='FN';
+		getstr("Concate of string="+name1.concat(name2))
+		getstr("Concate of string="+name1.concat(name2,name3,))
+		let username='ankitha'
+		getstr("trim()method ="+username.trim())
+		let name5 ='raju&ravi,ram';
+		//console.log(name5.split("&"));
+		//console.log(name5.split(","));
+		let name6='ankitha';
+		console.log(name6.startsWith('s'));
+		console.log(name6.startsWith('t'));
+		console.log(name6.endsWith('i'));
+        console.log(name6.endsWith('r'));
+        getstr('slice of string ='+name.slice(1,4));
+        getstr('slice of string ='+name.slice(-3));
+         getstr('slice of string ='+name.slice(-4,-2));
+          
+	</script>
+
+</body>
+</html>

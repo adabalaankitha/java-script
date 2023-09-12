@@ -1,0 +1,107 @@
+<!-- <!-- <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<div style="height: 600px; width: 800px;background-color: red; border: 1px solid black;">
+		<div style="height: 500px; width: 400px;background-color: pink; float: left;">
+			<img src="images in js/ve.avif" style="width: 125px; height: 500px; border-right: 1px solid #000;" onclick="getimage('images in js/ve.avif')">
+			<img src="images in js/ve.avif" style="width: 125px; height: 500px; border-right: 1px solid #000;" onclick="getimage('images in js/ve.avif')">
+			<img src="images in js/ve.avif" style="width: 125px; height: 500px; border-right: 1px solid #000;" onclick="getimage('images in js/ve.avif')">
+		</div>
+			
+		<div style="height: 500px; width: 200px; float: right; border: 1px solid #000;" id="output_id">
+			
+		</div>
+		
+	</div>
+	<script type="text/javascript">
+		function getimage(img_path) {
+			document.getElementById('output_id').innerHTML="<img scr='"+img_path+"'style='width:200px;height:500px;'/>";
+			// body...
+		}
+		
+	</script>
+
+</body> -->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> home task</title>
+	<style type="text/css">
+		div{
+            height: 400px;
+            width: 1000px;
+            border: 1px solid black;
+		}
+
+		#d1{
+            height: 320px;
+            width: 670px;
+            border: 1px solid black;
+            float: left;
+            margin: 30px;
+		}
+		#d2{
+            height: 320px;
+            width: 200px;
+            border: 1px solid black;
+            float: right;
+            margin: 30px;
+		}
+		#d11{
+            height: 300px;
+            width: 200px;
+            border: 1px solid black;
+            float: left;
+              margin: 10px;
+		}
+		#d12{
+            height: 300px;
+            width: 200px;
+            border: 1px solid black;
+            float: left;
+            margin: 10px;
+		}
+		#d13{
+            height: 300px;
+            width: 200px;
+            border: 1px solid black;
+            float: right;
+            margin: 10px;
+		}
+		img{
+            height: 300px;
+            width: 200px;
+        }
+	</style>
+</head>
+<body>
+   <center> <div>
+   	  <div id="d1">
+   	  	<div onclick="getimage('images in js/ve.avif')" id="d11"><img src="images in js/ve.avif"></div>
+   	  	<div onclick="getimage('images in js\html.jpeg')" id="d12"><img src="images in js\html.jpeg"></div>
+   	  	<div onclick="getimage('images in js\htmlvscss.webp')" id="d13"><img src="images in js\htmlvscss.webp"></div>
+   	  </div>
+   	  <div id="d2"></div>
+
+   	  <script type="text/javascript">
+   	  	let t1 = document.getElementById('d2')
+   	  	function getimage(img_path) {
+   	  		document.getElementById('d2').innerHTML = "<img src="+img_path+" style ='height: 340; width: 200;'>"
+   	  	}
+    
+   	  </script>
+
+
+
+
+
+   </div></center>
+</body>
+</html>

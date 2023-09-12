@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>dom methods</title>
+</head>
+<body>
+
+
+
+<h3>A demonstration of how to access an IMG element</h3>
+
+<img id="myImg" src="images in js/ve.avif" alt="The Pulpit Rock" width="304" height="228">
+
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myImg").src;
+  document.getElementById("demo").innerHTML = x;
+}
+</script>
+
+
+</body>
+</html>
